@@ -51,7 +51,7 @@
     "setup": "yarn"
   },
   "workspaces": [
-    "./packages/*"
+    "./packages/^.+\/.+\\..+$"
   ],
   "version": "4.0.3"
 }
