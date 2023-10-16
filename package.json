@@ -1,6 +1,5 @@
 {
-  "name": "jsdoc",
-  "private": true,
+  "name": "@oviceinc/jsdoc",
   "license": "Apache-2.0",
   "devDependencies": {
     "@babel/eslint-parser": "7.22.15",
@@ -51,5 +50,6 @@
   },
   "workspaces": [
     "./packages/*"
-  ]
+  ],
+  "version": "4.0.3"
 }
