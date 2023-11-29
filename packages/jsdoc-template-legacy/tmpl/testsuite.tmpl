@@ -1,0 +1,26 @@
+<?js var data = obj ?>
+<details>
+  <summary>
+    <?js var name = data.testcase.name ?>
+    <span style="font-size: large; font-weight: bold;">
+      <?js= name.match(/[A-Z][a-z]+/g).join(" ") ?>
+    </span>
+  </summary>
+  <br>
+  <div style="font-weight: bold;">
+    <?js= data.testcase.description ?>
+  </div>
+  <br>
+  <?js if(data.teststeps.length){ ?>
+  <h4>Test Steps:</h4>
+  <?js } ?>
+  <ol class="line-height: 300%;">
+    <?js data.teststeps.forEach(function(s){ ?>
+    <li>
+      <div style="line-height: 3;">
+        <?js= s.description ?>
+      </div>
+    </li>
+    <?js }) ?>
+  </ol>
+</details>
