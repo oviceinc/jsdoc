@@ -7,7 +7,6 @@ const path = require('jsdoc/path')
 const { taffy } = require('@jsdoc/salty')
 const template = require('jsdoc/template')
 const util = require('util')
-const { name } = require('../custom-tags/testsuite')
 
 const htmlsafe = helper.htmlsafe
 const linkto = helper.linkto
